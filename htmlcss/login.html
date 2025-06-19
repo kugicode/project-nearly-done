@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div id="heading">
+    <header>Welcome to the login and register page!</header>
+  </div>
+
+  <div id="buttonContainer">
+    <a href="index.html"><button>Home</button></a>
+    <a href="game.html"><button>Game</button></a>
+  </div>
+
+  <fieldset>
+    <legend>Register</legend>
+    <div id="register-container">
+      <input type="text" id="regUsername" name="username" placeholder="Username" />
+      <input type="password" id="regPassword" name="password" placeholder="Password" />
+    </div>
+    <button id="registerbtn" type="button">Register</button>
+    <p id="registerMsg"></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Login</legend>
+    <div id="login-container">
+      <input type="text" id="loginUsername" name="username" placeholder="Username" />
+      <input type="password" id="loginPassword" name="password" placeholder="Password" />
+    </div>
+    <button id="loginbtn" type="button">Login</button>
+    <p id="loginMsg"></p>
+  </fieldset>
+
+  <footer>
+    <img src="img/trio.PNG" alt="Cool Trio" id="trio" />
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

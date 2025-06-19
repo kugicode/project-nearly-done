@@ -1,0 +1,143 @@
+body {
+  background: linear-gradient(to bottom, antiquewhite, white);
+  font-family: 'Chewy', cursive;
+  animation: fade 0.3s forwards;
+  border-left: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 3px solid rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  font-size: 32px;
+  padding: 5px 15px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#heading {
+  text-align: center;
+}
+
+#para,
+#anotherContainer,
+ul {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 3px;
+}
+
+#imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+img {
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#trio {
+  width: 250px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+button {
+  background: linear-gradient(45deg, #ff6b6b, #f06595);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #f06595, #ff6b6b);
+  transform: scale(1.1);
+}
+
+#buttonContainer {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#myCanvas {
+  border: solid rgb(37, 37, 37) 2px;
+  background-color: gray;
+}
+
+#canvasContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+fieldset {
+  margin: 25px auto;
+  padding: 50px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+input {
+  border-radius: 8px;
+  border: none;
+  padding: 15px;
+  margin: 5px;
+}
+
+#register-container {
+  text-align: center;
+}
+
+span{
+    font-size: 45px;
+}
+
